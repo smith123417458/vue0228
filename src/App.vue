@@ -1,32 +1,62 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <!-- 過場特效 -->
+    <loading :active.sync="isLoading"></loading>
+    <router-view />
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+export default {
+  computed: {
+    // 過場特效
+    isLoading() {
+      return this.$store.state.isLoading;
+    },
+  },
+  /**
+   ** ***** 全域註冊 Event bus *****
+   *
+   * 1. Sweet alert 事件，參數為 icon (成功或失敗)、title (顯示的文字訊息)
+   *
+   * 2. goTop 事件，滾動至網頁頂部(避免轉換頁面時，畫面跑掉)，並藉由 Navbar.vue 的 watch 監聽在每次切換路由時滾動至頂部
+   */
+  created() {
+    // Sweet alert 成功或失敗
+    this.$bus.$on('sweet-alert', (params) => {
+      this.$swal.fire({
+        position: 'top-end',
+        ...params,
+        showConfirmButton: false,
+        timer: 2000,
+        allowOutsideClick: false,
+      });
+    });
 
-#nav {
-  padding: 30px;
+    // Sweet alert 傳達訊息
+    this.$bus.$on('sweet-alert-info', (params) => {
+      this.$swal.fire({
+        ...params,
+        showCloseButton: false,
+        confirmButtonText: '已複製',
+        buttonsStyling: false,
+        customClass: {
+          confirmButton: 'btn btn-dark btn-lg',
+        },
+      });
+    });
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
-</style>
+    // goTop
+    this.$bus.$on('goTop', () => {
+      $('html, body')
+        .stop()
+        .animate(
+          {
+            scrollTop: $('html,body').offset().top,
+          },
+          1000,
+        );
+    });
+  },
+};
+</script>
