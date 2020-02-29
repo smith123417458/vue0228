@@ -8,7 +8,9 @@
     <main>
       <router-view  />
     </main>
+  
 
+  <!-- 之後footer 和其它組件要加進來 -->
    
   </div>
 </template>
@@ -20,6 +22,12 @@ export default {
     // 最上方導覽列
     Navbar: () => import('@/components/Navbar'),
  
-  
+  //之後footer要加進來
+
+
+
+
+
+
 }}
 </script>
