@@ -51,7 +51,7 @@
             href="#"
             @mouseenter="brandMouseEnter"
             @mouseleave="brandMouseLeave"
-            @click="changeCategory('Headphone')"
+            @click="changeCategory('car')"
           >
             <span class="align-middle">代理品牌</span>
           </a>
@@ -66,14 +66,14 @@
           <ul id="brand-list-rwd" class="navbar-nav d-xl-none">
             <li
               class="nav-item"
-              v-for="category in this.$store.state.brands.Headphone"
+              v-for="category in this.$store.state.brands.car"
               :key="category"
             >
               <a to="#" class="nav-link pl-5" @click.prevent="changeCategory(category)">{{
                 category
               }}</a>
             </li>
-            <li class="nav-item" v-for="category in this.$store.state.brands.DAC" :key="category">
+            <li class="nav-item" v-for="category in this.$store.state.brands.motorbike" :key="category">
               <a to="#" class="nav-link pl-5" @click.prevent="changeCategory(category)">{{
                 category
               }}</a>
@@ -86,15 +86,7 @@
             <span class="hvr-underline-from-left">平輸代購</span>
           </router-link>
         </li>
-        <!--// TODO 研究中 -->
-        <!-- <li class="nav-item">
-          <router-link
-            class="nav-link p-3 px-4"
-            to="/"
-          >
-            <span class="hvr-underline-from-left">專欄</span>
-          </router-link>
-        </li> -->
+       
         <li class="nav-item">
           <router-link class="nav-link p-3 px-4" to="/warranty">
             <span class="hvr-underline-from-left">支援</span>
@@ -110,15 +102,7 @@
           <i class="fal fa-user-circle"></i>
         </router-link>
       </li>
-      <!-- // TODO 應該會改為 FB messenger -->
-      <!-- <li class="nav-item">
-        <router-link
-          class="d-none d-xl-block py-3 px-4"
-          to="/"
-        >
-          <i class="fal fa-comment-dots"></i>
-        </router-link>
-      </li> -->
+     
 
       <!-- 購物車按鈕 -->
       <li class="nav-item">
@@ -148,13 +132,12 @@
           <div class="col-7">
             <div class="row w-100 mb-5">
               <div class="col-2">
-                <h2 class="h4 text-center font-weight-bold m-0">Headphone</h2>
+                <h2 class="h4 text-center font-weight-bold m-0">car</h2>
                 <router-link class="d-block text-center" to="/product">
                   <img
                     class
                     src="https://www.shopro.com.tw/images/228/product/2280003951.jpg"
                     width="100"
-                    alt="Navbar-img-Headphone"
                   />
                 </router-link>
               </div>
@@ -162,7 +145,7 @@
                 <a
                   class="d-block text-black p-3 px-4"
                   href="#"
-                  v-for="category in this.$store.state.brands.Headphone"
+                  v-for="category in this.$store.state.brands.car"
                   :key="category"
                   @click.prevent="changeCategory(category)"
                 >
@@ -173,12 +156,11 @@
 
             <div class="row w-100">
               <div class="col-2">
-                <h2 class="h4 text-center font-weight-bold m-0">DAC</h2>
-                <a class="d-block text-center" href="#" @click="changeCategory('DAC')">
+                <h2 class="h4 text-center font-weight-bold m-0">motorbike</h2>
+                <a class="d-block text-center" href="#" @click="changeCategory('motorbike')">
                   <img
                     src="http://winkey-audio.com.tw/wp-content/uploads/teac_ud503_03a.jpg"
                     width="100"
-                    alt="Navbar-img-DAC"
                   />
                 </a>
               </div>
@@ -186,7 +168,7 @@
                 <a
                   class="d-block text-black p-3 px-4"
                   href="#"
-                  v-for="category in this.$store.state.brands.DAC"
+                  v-for="category in this.$store.state.brands.motorbike"
                   :key="category"
                   @click.prevent="changeCategory(category)"
                 >
@@ -224,33 +206,7 @@
       </div>
     </div>
 
-    <!-- Message Modal -->
-    <!-- <div
-      class="modal fade"
-      id="messageModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="messageModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="messageModalLabel">留言板</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div> -->
+    
   </nav>
 </template>
 
@@ -469,7 +425,6 @@ li:hover {
 
 #brand-list a:hover {
   .hvr-underline-reveal:before {
-    -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 }

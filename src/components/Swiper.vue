@@ -35,7 +35,7 @@
 
 <script>
 import { swiper, swiperSlide } from 'vue-awesome-swiper';
-import '../../node_modules/swiper/css/swiper.css';
+ import '../../node_modules/swiper/css/swiper.css';
 
 export default {
   data() {
@@ -44,16 +44,20 @@ export default {
       // ? 並且開始輪播的圖片不是從陣列的第一張開始播放
       // ? 但如果是一開始給予圖片，就不會跳動，並且可按照順序播放
       banners: [
-        'https://i.imgur.com/5kQW3K1.jpg',
-        'https://i.imgur.com/lXzRxGw.jpg',
-        'https://i.imgur.com/5EzoaF5.jpg',
+        'https://hotaicdn.azureedge.net/toyotaweb/BANNER_201907301648331L6QQ6O2.jpg',
+        'https://hotaicdn.azureedge.net/toyotaweb/BANNER_2019051013273645C4E06D.jpg',
+        'https://www.lexus.com.tw/upload/bnr/201911/201911271404300871CF94.jpg',
+        'https://www.lexus.com.tw/upload/bnr/201911/201911271346423EDM26UD.jpg',
         'https://i.imgur.com/hUSffAm.jpg',
       ],
       // 輪播設定
       swiperOption: {
         loop: true,
-        autoplay: 3000,
         speed: 1500,
+        //autoplay為swiper3升級到swiper4格式寫法
+        autoplay:{
+          stopOnLastSlide:true,
+        } ,
         autoplayDisableOnInteraction: false,
       },
     };
@@ -63,15 +67,6 @@ export default {
     swiperSlide,
   },
 
-  // ! 若使用資料庫存到 VueX 有畫面跳動問題
-  // computed: {
-  //   banners() {
-  //     return this.$store.state.banners;
-  //   },
-  // },
-  // created() {
-  //   this.$store.dispatch('getBanners');
-  // },
 };
 </script>
 <style lang="scss" scoped>
@@ -80,11 +75,8 @@ export default {
 #swiper {
   img {
     width: 100%;
-    // 瀏覽器高
     height: 100vh;
-    // 物件契合
     object-fit: cover;
-    // 其他裝置下只有一半高
     @include BS-xl {
       height: 50vh;
     }

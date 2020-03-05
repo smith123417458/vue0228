@@ -1,19 +1,19 @@
 <template>
   <div id="app">
     <!-- 過場特效 -->
-    <loading :active.sync="isLoading"></loading>
+    <!-- <loading :active.sync="isLoading"></loading> -->
     <router-view />
   </div>
 </template>
 
 <script>
 export default {
-  computed: {
-    // 過場特效
-    isLoading() {
-      return this.$store.state.isLoading;
-    },
-  },
+  // computed: {
+  //   // 過場特效
+  //   isLoading() {
+  //     return this.$store.state.isLoading;
+  //   },
+  // },
   /**
    ** ***** 全域註冊 Event bus *****
    *

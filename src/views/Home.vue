@@ -8,7 +8,10 @@
     <main>
       <router-view  />
     </main>
-  
+    
+     <footer>
+      <Footer />
+    </footer>
 
   <!-- 之後footer 和其它組件要加進來 -->
    
@@ -19,11 +22,11 @@
 <script>
 export default {
   components: {
-    // 最上方導覽列
+ 
     Navbar: () => import('@/components/Navbar'),
  
   //之後footer要加進來
-
+   Footer: () => import('@/components/Footer'),
 
 
 

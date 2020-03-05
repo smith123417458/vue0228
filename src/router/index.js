@@ -15,9 +15,15 @@ const routes = [{
     path: '',
     component: () => import('@/views/LandingPage.vue'),
   },
+  {
+    path: 'product',
+    component: () => import('@/components/Product.vue'),
+  },
   
-  
-  
+  {
+    path: 'product/:productId',
+    component: () => import('@/components/ProductItem.vue'),
+  },
   
   
   
