@@ -1,22 +1,36 @@
 <template>
   <div>
     <!-- jumbotron -->
-    <div class="jumbotron text-white">
+
+    
+    <img src="https://www.ponyrent.com.tw/images/banner.jpg" >
+
+
+    <!-- <div class="jumbotron text-white">
       <div class="container text-right mt-5">
         <div class="row">
           <div class="col">
-            <h2>V-Headphone 開幕回饋</h2>
+            <h2>好運租車 開幕回饋</h2>
             <p class="lead">
               即刻輸入優惠碼，享折扣價與額外
-              <span class="font-weight-bold">6 個月</span>
-              保固
+              <span class="font-weight-bold">享折扣價與額外</span>
             </p>
             <button class="btn btn-outline-light btn-sm" @click="showCoupon">立刻索取</button>
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
+
+
+
+
+
+
+ <br>
+ <br>
+ <br>
+ <br>
     <div class="container">
       <div class="row">
         <!-- 左方產品分類 -->
@@ -28,8 +42,7 @@
               :class="{'list-group-item-dark': nowCategory === 'car'}"
               @click.prevent="changeCategory('car')"
             >
-              <i class="fal fa-headphones"></i>
-              car
+             <i class="fas fa-car-side"></i>   car
             </a>
             <a
               href="#"
@@ -45,8 +58,7 @@
               :class="{'list-group-item-dark': nowCategory === 'motorbike'}"
               @click.prevent="changeCategory('motorbike')"
             >
-              <i class="fal fa-hdd"></i>
-              motorbike
+              <i class="fas fa-motorcycle"></i> motorbike
             </a>
             <a
               href="#"
@@ -56,9 +68,6 @@
               :key="category"
               @click.prevent="changeCategory(category)"
             >{{category}}</a>
-            <a class="list-group-item list-group-item-action pl-5 text-muted" disabled>
-              BARTÓK(接洽中)
-              </a>
           </div>
         </div>
 
@@ -71,16 +80,13 @@
                   <img
                     :src="item.imageUrl"
                     class="d-block card-img-top hvr-grow"
-                    alt="..."
                   />
                 </router-link>
 
                 <div class="card-body">
                   <p class="card-text text-center m-0">
                     <router-link :to="`/product/${item.id}`" class="text-dark">
-                      <span
-                        class="font-weight-bold hvr-underline-from-center"
-                        style="font-family: 'Cormorant Garamond', serif;"
+                      <span class="font-weight-bold hvr-underline-from-left"  
                       >{{item.title}}</span>
                     </router-link>
                   </p>
@@ -147,10 +153,23 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.jumbotron {
-  background: url(https://www.toyota.com.tw/C-HR_UPGRADE/images/kv_03.png)
-    no-repeat;
-  background-position: center center;
-  background-size: cover;
+img{
+  max-width: 100%;
+  max-height: 100%;
+  height: auto !important;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+
 }
+// .jumbotron 
+//   // background: url(https://www.toyota.com.tw/C-HR_UPGRADE/images/kv_03.png)
+//    background: url(https://www.ponyrent.com.tw/images/banner.jpg) 
+  
+//     no-repeat;
+//     max-width: 100%;
+
+//   //  background-position: center center;
+//   //  background-size: cover;
+// 
 </style>

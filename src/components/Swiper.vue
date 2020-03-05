@@ -17,10 +17,10 @@
       </swiper-slide>
     </swiper>
     <div class="swiper-intro p-2 d-none d-sm-block position-absolute">
-      <h3
+      <h1
         class="text-white"
         style="font-family: 'Noto Serif JP', serif;"
-      >V ヘッドホン</h3>
+      >好運組車</h1>
       <p
         class="text-white mt-3"
         style="font-family: 'Noto Serif JP', serif;"
@@ -44,13 +44,13 @@ export default {
       // ? 並且開始輪播的圖片不是從陣列的第一張開始播放
       // ? 但如果是一開始給予圖片，就不會跳動，並且可按照順序播放
       banners: [
-        'https://hotaicdn.azureedge.net/toyotaweb/BANNER_201907301648331L6QQ6O2.jpg',
+        'https://images.zi.org.tw/incar/2019/06/27052146/1561584105-698381406bd400f3729c84322c86c226.jpg',
         'https://hotaicdn.azureedge.net/toyotaweb/BANNER_2019051013273645C4E06D.jpg',
         'https://www.lexus.com.tw/upload/bnr/201911/201911271404300871CF94.jpg',
         'https://www.lexus.com.tw/upload/bnr/201911/201911271346423EDM26UD.jpg',
-        'https://i.imgur.com/hUSffAm.jpg',
+        'https://hotaicdn.azureedge.net/toyotaweb/BANNER_201907301648331L6QQ6O2.jpg',
+        
       ],
-      // 輪播設定
       swiperOption: {
         loop: true,
         speed: 1500,

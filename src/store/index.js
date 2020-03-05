@@ -8,7 +8,7 @@ export default new Vuex.Store({
     types: ['car', 'motorbike'],
     brands: {
       car: ['TOYOTA','LEXUS','MITSUBISHI','Lamborghini', ],
-      motorbike: ['TEAC', 'Audio Research'],
+      motorbike: ['YAMAHA', 'HONDA','BMW','SUZUKI'],
     },
     products: [],
     allProducts: [],
