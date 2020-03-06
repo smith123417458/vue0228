@@ -1,9 +1,9 @@
 <template>
   <div>
     <!-- jumbotron -->
-   <div class="banner"></div>
-    
-    <!-- <img class="banner" src="https://www.ponyrent.com.tw/images/banner.jpg" > -->
+    <div class="banner"></div>
+     
+    <!-- <img class="banner d-none d-sm-block" src="https://www.ponyrent.com.tw/images/banner.jpg" > -->
 
 
     <!-- <div class="jumbotron text-white">
@@ -167,26 +167,29 @@ export default {
 
 @media(max-width:500px){
   .banner{
-    background: url(https://www.toyota.com.tw/C-HR_UPGRADE/images/kv_03.png);
+    // background: url(https://www.toyota.com.tw/C-HR_UPGRADE/images/kv_03.png);
+    background: url(https://www.abcar.com.tw/skin/banner.jpg);
+
     background-size: cover;
     min-height: 310px;
-    background-position: center center;
+    background-position: 50% 50%;
     max-height: 50vh;
   }
 }
 
-// .banner{
-//   max-width: 100%;
-//   min-height: 320px;
-//   max-height: 50vh;
-//   height: 460px;
-//   background-size: cover;
-//   // height: auto !important;
-//   display: inline-block;
-//   vertical-align: middle;
-//   line-height: 1;
+//  .banner{
+//      width: 100%;
+//      height: 30vh;
+//      object-fit: cover;
+//  }
+//   @media(max-width:500px){
+//    .banner{ 
+//      height: 50vh;
+//    }
+//   }
 
-// }
+
+
 // .jumbotron 
 //   // background: url(https://www.toyota.com.tw/C-HR_UPGRADE/images/kv_03.png)
 //    background: url(https://www.ponyrent.com.tw/images/banner.jpg) 

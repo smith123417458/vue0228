@@ -9,18 +9,17 @@
         v-for="banner in banners"
         :key="banner"
       >
-        <img
-          class
-          :src="banner"
-          alt="swiper-image"
+        <img 
+        class 
+        :src="banner"
         />
       </swiper-slide>
     </swiper>
-    <div class="swiper-intro p-2 d-none d-sm-block position-absolute">
-      <h1
-        class="text-white"
-        style="font-family: 'Noto Serif JP', serif;"
-      >好運組車</h1>
+    <div class="swiper-intro p-2 d-sm-block position-absolute">
+        <!-- d-none d-sm-block   小尺寸以下會消失-->
+      <div class='bglay p-3'>
+       <h1 class="display-3">好運租車</h1>
+      </div>
       <p
         class="text-white mt-3"
         style="font-family: 'Noto Serif JP', serif;"
@@ -83,8 +82,8 @@ export default {
   }
 }
 .swiper-intro {
-  top: 60%;
-  left: 15%;
+  top: 7%;
+  left: 0%;
   z-index: 10;
 }
 
@@ -93,5 +92,9 @@ export default {
   bottom: 5%;
   left: 50%;
   z-index: 10;
+}
+.bglay{
+  background-color: rgba(255,255,255,.35);
+ 
 }
 </style>
