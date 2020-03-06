@@ -1,9 +1,9 @@
 <template>
   <div>
     <!-- jumbotron -->
-
+   <div class="banner"></div>
     
-    <img src="https://www.ponyrent.com.tw/images/banner.jpg" >
+    <!-- <img class="banner" src="https://www.ponyrent.com.tw/images/banner.jpg" > -->
 
 
     <!-- <div class="jumbotron text-white">
@@ -27,8 +27,7 @@
 
 
 
- <br>
- <br>
+ 
  <br>
  <br>
     <div class="container">
@@ -153,15 +152,41 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-img{
-  max-width: 100%;
-  max-height: 100%;
-  height: auto !important;
-  display: inline-block;
-  vertical-align: middle;
-  line-height: 1;
 
+.banner{
+  background-image:url(https://www.ponyrent.com.tw/images/banner.jpg);
+  // background-size: cover;
+  // height: 400px;
+  max-width: 100%;
+  min-height: 310px;
+  // max-height: 50vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  
 }
+
+@media(max-width:500px){
+  .banner{
+    background: url(https://www.toyota.com.tw/C-HR_UPGRADE/images/kv_03.png);
+    background-size: cover;
+    min-height: 310px;
+    background-position: center center;
+    max-height: 50vh;
+  }
+}
+
+// .banner{
+//   max-width: 100%;
+//   min-height: 320px;
+//   max-height: 50vh;
+//   height: 460px;
+//   background-size: cover;
+//   // height: auto !important;
+//   display: inline-block;
+//   vertical-align: middle;
+//   line-height: 1;
+
+// }
 // .jumbotron 
 //   // background: url(https://www.toyota.com.tw/C-HR_UPGRADE/images/kv_03.png)
 //    background: url(https://www.ponyrent.com.tw/images/banner.jpg) 
