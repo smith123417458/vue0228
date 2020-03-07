@@ -201,8 +201,8 @@ export default {
     }
     &:hover {border: 0.5px solid #c1170c;box-shadow: 0 1px 5px #c1170c;
     }
-    &.active { border: 0.5px solid #c1170c;
-      box-shadow: 0 2px 10px #c1170c;}
+    &.active { border: 0.5px solid #0c5ac1;
+      box-shadow: 0 2px 10px #180cc1;}
       }
 
 

@@ -12,24 +12,24 @@
       </h3>
       <div class="d-flex flex-wrap justify-content-center mb-5 pb-5" style="overflow: hidden;">
         <card
-          data-image="https://www.lexus.com.tw/upload/bnr/201911/2019112713464226B96621.jpg"
-          v-scroll-reveal="{origin: 'right'}"
+          data-image="https://i.imgur.com/r92U467.jpg"
+          v-scroll-reveal="{origin: 'left'}"
         >
-          <h3 slot="header" class="h2">Headphone</h3>
-          <p slot="content" class="ml-5 mb-4">--最好的耳機都在這裡</p>
+          <h3 slot="header" class="h2">好運租車</h3>
+          <p slot="content" class="ml-5 mb-4">--最好的租車都在這裡</p>
           <div slot="footer" class="text-center">
             <button
               class="btn btn-outline-light btn-sm"
               type="button"
-              @click="goPage('Headphone')"
+              @click="goPage('car')"
             >立即前往</button>
           </div>
         </card>
         <card
-          data-image="https://www.lexus.com.tw/upload/bnr/201911/2019112714032021414103.jpg"
+          data-image="https://i.imgur.com/hMV1R04.jpg"
           v-scroll-reveal="{origin: 'right'}"
         >
-          <h3 slot="header" class="h2">motorbike</h3>
+          <h3 slot="header" class="h2">好運機車</h3>
           <p slot="content" class="ml-4 mb-4">--耳機擴大機，好聲的重要推手</p>
           <div slot="footer" class="text-center">
             <button class="btn btn-outline-light btn-sm" type="button" @click="goPage('motorbike')">立即前往</button>

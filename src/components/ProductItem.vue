@@ -69,7 +69,6 @@ export default {
     addToCart(productId) {
       const vm = this;
       const apiUrl = `${process.env.VUE_APP_APIPATH}/api/${process.env.VUE_APP_CUSTOMPATH}/cart`;
-
       const cart = {
         product_id: productId,
         qty: vm.qty,
@@ -85,9 +84,7 @@ export default {
             title: '已成功加入購物車',
           });
           vm.$store.dispatch('getCarts');
-          vm.$store.dispatch('updateLoading', false);
-
-         
+          vm.$store.dispatch('updateLoading', false); 
         });
     },
     decreaseQty() {
@@ -99,7 +96,6 @@ export default {
       this.qty += 1;
     },
   },
-
   created() {
     this.getProduct();
   },

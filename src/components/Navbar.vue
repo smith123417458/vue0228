@@ -21,11 +21,6 @@
       </span>
     </button>
 
-    <!-- LOGO -->
-    <router-link id="LOGO" class="p-3 ml-xl-6" to="/">
-      <img :src="LOGO" class="img-fluid" width="120" alt="V-Headphone|V-ヘッドホン LOGO" />
-    </router-link>
-
     <div class="collapse navbar-collapse ml-xl-6 order-2 order-xl-1" id="navbarNav">
       <ul class="navbar-nav">
         <!-- 其他裝置下的會員登入與註冊 -->
@@ -81,17 +76,9 @@
           </ul>
         </li>
 
-        <li class="nav-item">
-          <router-link class="nav-link p-3 px-4" to="/parallel_import">
-            <span class="hvr-underline-from-left">平輸代購</span>
-          </router-link>
-        </li>
        
-        <li class="nav-item">
-          <router-link class="nav-link p-3 px-4" to="/warranty">
-            <span class="hvr-underline-from-left">支援</span>
-          </router-link>
-        </li>
+       
+        
       </ul>
     </div>
 
@@ -136,7 +123,7 @@
                 <router-link class="d-block text-center" to="/product">
                   <img
                     class
-                    src="https://www.shopro.com.tw/images/228/product/2280003951.jpg"
+                    src="https://images.zi.org.tw/incar/2019/06/27052146/1561584105-698381406bd400f3729c84322c86c226.jpg"
                     width="100"
                   />
                 </router-link>
@@ -159,7 +146,7 @@
                 <h2 class="h4 text-center font-weight-bold m-0">motorbike</h2>
                 <a class="d-block text-center" href="#" @click="changeCategory('motorbike')">
                   <img
-                    src="http://winkey-audio.com.tw/wp-content/uploads/teac_ud503_03a.jpg"
+                    src="https://i.imgur.com/aYw53up.jpg"
                     width="100"
                   />
                 </a>
@@ -186,21 +173,20 @@
           >
             <p
               class="h1 text-white mt-5"
-              style="font-family: 'Cormorant Garamond', serif; text-shadow: 2px 2px 8px black"
+              style=" text-shadow: 2px 2px 8px black"
             >
-              V ヘッドホン
+             好運租車
             </p>
             <p
-              class="h5 text-white ml-8"
-              style="font-family: 'Cormorant Garamond', serif; text-shadow: 2px 2px 8px black"
+              class="h5 text-black ml-8"
             >
-              こころの支え
+              這是右邊那個圖片中的字
             </p>
           </a>
         </div>
         <div class="row w-100">
           <div class="col">
-            <p class="text-secondary text-center mt-5 w-100">V Headphone | V ヘッドホン</p>
+            <p class="text-secondary text-center mt-5 w-100">好運租車</p>
           </div>
         </div>
       </div>

@@ -35,10 +35,7 @@ const routes = [{
         path: 'checkout',
         component: () => import('@/components/Checkout.vue'),
       },
-      {
-        path: 'checkout/:orderId',
-        component: () => import('@/components/CheckoutOrder.vue'),
-      },
+      
     ],
   },
   
@@ -51,10 +48,7 @@ const routes = [{
 
 const router = new VueRouter({
   routes,
-  // 這樣也可以在切換路由時，將畫面移至上方
-  // scrollBehavior (to, from, savedPosition) {
-  //   return { x: 0, y: 0 }
-  // }
+  
 });
 
 export default router;

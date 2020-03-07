@@ -159,11 +159,9 @@ export default {
     };
   },
   methods: {
-    // 使用優惠券
     useCoupon() {
       const vm = this;
       const apiUrl = `${process.env.VUE_APP_APIPATH}/api/${process.env.VUE_APP_CUSTOMPATH}/coupon`;
-
       const couponCode = {
         code: vm.couponCode,
       };
@@ -194,17 +192,13 @@ export default {
       });
     },
 
-    // 刪除購物車
     deleteCart(id) {
       const apiUrl = `${process.env.VUE_APP_APIPATH}/api/${process.env.VUE_APP_CUSTOMPATH}/cart/${id}`;
-
       axios.delete(apiUrl).then(() => {
         this.$store.dispatch('getCarts');
       });
     },
   },
-
-  // 取得存在 VueX 的購物車資訊
   computed: {
     carts() {
       return this.$store.state.carts;
