@@ -22,7 +22,7 @@
       </div> -->
 
       <div class='bglay p-3'>
-       <h1 class="display-3">好運租車
+       <h1 class="display-3">FUN假去那玩
        <div class='typing'>我在好運租車等你!</div>
        </h1>
       </div>

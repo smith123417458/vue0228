@@ -34,35 +34,37 @@
       <div class="row">
         <!-- 左方產品分類 -->
         <div class="col-lg-3">
-          <div class="list-group sticky-top mb-5">
+          <!-- <div class="list-group sticky-top mb-5"> -->
+          <div class="d-flex d-lg-block flex-wrap justify-content-between sticky-list">
             <a
               href="#"
-              class="list-group-item list-group-item-action text-black font-weight-bold"
-              :class="{'list-group-item-dark': nowCategory === 'car'}"
+               class="btn category-btn d-md-flex justify-content-center align-items-center p-3" 
+              :class="{'active': nowCategory === 'car'}"
               @click.prevent="changeCategory('car')"
             >
-             <i class="fas fa-car-side"></i>   car
+              <i class="fas fa-car-side"></i>   car 
+             <!-- <img src="https://picsum.photos/30/30/?random=1"> car -->
             </a>
             <a
               href="#"
-              class="list-group-item list-group-item-action text-black pl-5"
-              :class="{'list-group-item-black': nowCategory === category}"
+               class="btn category-btn d-md-flex justify-content-center align-items-center p-3" 
+              :class="{'active': nowCategory === category}"
               v-for="category in this.$store.state.brands.car"
               :key="category"
               @click.prevent="changeCategory(category)"
             >{{category}}</a>
             <a
               href="#"
-              class="list-group-item list-group-item-action text-black font-weight-bold"
-              :class="{'list-group-item-dark': nowCategory === 'motorbike'}"
+             class="btn category-btn d-md-flex justify-content-center align-items-center p-3" 
+              :class="{'active': nowCategory === 'motorbike'}"
               @click.prevent="changeCategory('motorbike')"
             >
               <i class="fas fa-motorcycle"></i> motorbike
             </a>
             <a
               href="#"
-              class="list-group-item list-group-item-action text-black pl-5"
-              :class="{'list-group-item-dark': nowCategory === category}"
+              class="btn category-btn d-md-flex justify-content-center align-items-center p-3" 
+              :class="{'active': nowCategory === category}"
               v-for="category in this.$store.state.brands.motorbike"
               :key="category"
               @click.prevent="changeCategory(category)"
@@ -176,6 +178,33 @@ export default {
     max-height: 50vh;
   }
 }
+.sticky-list {
+    @media (min-width: 992px) {
+      position: sticky !important;
+      top: 93px;
+    }
+  }
+.category-btn {
+    border-radius: 5px;
+    border: 0.5px solid #ccc;
+    margin-bottom: 2%;
+    transition: all 0.5s;
+    @media (max-width: 366px) {
+      width: 49%;
+    }
+    @media (min-width: 367px) and (max-width: 991px) {
+      width: 32%;}
+    p { margin: 0;
+      font-weight: bold;
+      @media (min-width: 767px) {  padding-left: 20px;
+      }
+    }
+    &:hover {border: 0.5px solid #c1170c;box-shadow: 0 1px 5px #c1170c;
+    }
+    &.active { border: 0.5px solid #c1170c;
+      box-shadow: 0 2px 10px #c1170c;}
+      }
+
 
 //  .banner{
 //      width: 100%;
