@@ -15,11 +15,18 @@
         />
       </swiper-slide>
     </swiper>
-    <div class="swiper-intro p-2 d-sm-block position-absolute">
+    <div class="swiper-intro p-2 d-none d-sm-block position-absolute">
         <!-- d-none d-sm-block   小尺寸以下會消失-->
-      <div class='bglay p-3'>
+      <!-- <div class='bglay p-3'>
        <h1 class="display-3">好運租車</h1>
+      </div> -->
+
+      <div class='bglay p-3'>
+       <h1 class="display-3">好運租車
+       <div class='typing'>我在好運租車等你!</div>
+       </h1>
       </div>
+
       <p
         class="text-white mt-3"
         style="font-family: 'Noto Serif JP', serif;"
@@ -97,4 +104,42 @@ export default {
   background-color: rgba(255,255,255,.35);
  
 }
+h1 {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.55);
+    padding: 10px;
+    border-radius: 10px;
+    width: 604px;
+    min-height: 90px;
+    max-height: 100%;
+    div{
+      line-height: 1.4;
+    }
+    .typing {
+      width: 9em;
+      white-space: nowrap;
+      border-right: 2px solid transparent;
+      animation: typing 3.5s steps(9, end);
+      //  blink-caret 0.75s step-end infinite;
+      overflow: hidden;
+      letter-spacing: 0;
+    }
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 9em;
+      }
+    }
+    // @keyframes blink-caret {
+    //   from,
+    //   to {
+    //     box-shadow: 2px 0 0 0 transparent;
+    //   }
+    //   50% {
+    //     box-shadow: 2px 0 0 0;
+    //   }
+    // }
+  }
 </style>
