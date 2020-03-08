@@ -13,26 +13,21 @@
             style="overflow: hidden"
           >
             <div class="event-information">
-              <h3
-                class="display-4 my-4"
-                style="font-family: 'Cormorant Garamond', serif"
-              >Always Listening</h3>
+              <h3 class="display-4 my-4" > 當日租還．暢遊趣 </h3>
               <p class="mb-4">
-                與愛樂者來場輕鬆的耳機交流會吧~
-                <i class="far fa-music"></i>
+               當日租還享平日55折，假日65折，限出車當日晚上8點前還車
               </p>
               <ul class="list-unstyled mb-5">
                 <li>
-                  <i class="fal fa-clock"></i> 每月第三個禮拜六 16:00
+                  <i class="fal fa-clock"></i>專案效期：2020.01.01~2020.12.31
                 </li>
                 <li>
-                  <i class="fas fa-map-marker-alt pr-1"></i> 高雄市楠梓區 123 段 45 號-本店 2F
-                </li>
+                  當日租還暢遊趣，週一至週五享訂價55折，假日享訂價65折。</li>
               </ul>
               <p>
-                <span class="font-weight-bold">無需任何費用</span>，不用預約，現場備有免費咖啡與茶點
+                <span class="font-weight-bold">限出車當日晚上8點前還車</span>，方可適用本專案。
               </p>
-              <p>歡迎自帶耳機與設備來分享喔！</p>
+              <p>逾出車當日晚上8點還車，則需收取租賃車款之一日租金(平日75折；假日85折)</p>
             </div>
 
           </div>

@@ -6,10 +6,10 @@
   >
     <div class="p-1" >
       <h2 class="h2 mb-4">
-        V-Headphone
-        <span>為愛樂者而生</span>
+        好運租車
+        <span>優質可靠輕鬆行編全台</span>
       </h2>
-      <p class="h2 mb-4">帶您重新認識好聲音</p>
+      <p class="h2 mb-4">線上/手機即可預約,輕鬆成行</p>
       <router-link class="btn btn-outline-dark" to="/product"><i class="fal fa-headphones mr-1"></i>瀏覽商品</router-link>
     </div>
   </section>
