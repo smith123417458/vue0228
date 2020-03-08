@@ -22,15 +22,12 @@
       </div> -->
 
       <div class='bglay p-3'>
-       <h1 class="display-3">FUN假去那玩
+       <h1>FUN假去那玩
        <div class='typing'>我在好運租車等你!</div>
        </h1>
       </div>
 
-      <p
-        class="text-white mt-3"
-        style="font-family: 'Noto Serif JP', serif;"
-      >すべての人にいい音を</p>
+     
     </div>
     <div class="scroll-icon position-absolute d-none d-xl-block">
       <p class="m-0">Scroll</p>
@@ -51,10 +48,13 @@ export default {
       // ? 但如果是一開始給予圖片，就不會跳動，並且可按照順序播放
       banners: [
         'https://images.zi.org.tw/incar/2019/06/27052146/1561584105-698381406bd400f3729c84322c86c226.jpg',
-        'https://hotaicdn.azureedge.net/toyotaweb/BANNER_2019051013273645C4E06D.jpg',
-        'https://www.lexus.com.tw/upload/bnr/201911/201911271404300871CF94.jpg',
-        'https://www.lexus.com.tw/upload/bnr/201911/201911271346423EDM26UD.jpg',
-        'https://hotaicdn.azureedge.net/toyotaweb/BANNER_201907301648331L6QQ6O2.jpg',
+        // 'https://hotaicdn.azureedge.net/toyotaweb/BANNER_2019051013273645C4E06D.jpg',
+        // 'https://www.lexus.com.tw/upload/bnr/201911/201911271404300871CF94.jpg',
+        'https://scdn.slashgear.com/wp-content/uploads/2020/01/lamborghini-aventador-svj-roadster-04-1280x720.jpg',
+        // 'https://www.lexus.com.tw/upload/bnr/201911/201911271346423EDM26UD.jpg',
+        // 'https://images.zi.org.tw/incar/2019/06/25004224/1561394543-559c900da5ac650ef192e03cf2390e28.jpg',
+        // 'https://hotaicdn.azureedge.net/toyotaweb/BANNER_201907301648331L6QQ6O2.jpg',
+        'https://tcar.tv/public/upimgs/carnews/Lamborghini/Press/2020/202001/6/SMALL_554586.jpg',
         
       ],
       swiperOption: {
@@ -105,11 +105,11 @@ export default {
  
 }
 h1 {
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.55);
+    color:black;
+    background-color: rgba(0, 0, 0, 0.25);
     padding: 10px;
     border-radius: 10px;
-    width: 604px;
+    width: 345px;
     min-height: 90px;
     max-height: 100%;
     div{
