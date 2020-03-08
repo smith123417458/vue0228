@@ -32,7 +32,8 @@
           <h3 slot="header" class="h2">好運機車</h3>
           <p slot="content" class="ml-4 mb-4">--耳機擴大機，好聲的重要推手</p>
           <div slot="footer" class="text-center">
-            <button class="btn btn-outline-light btn-sm" type="button" @click="goPage('motorbike')">立即前往</button>
+            <button class="btn btn-outline-light btn-sm" type="button"
+             @click="goPage('motorbike')">立即前往</button>
           </div>
         </card>
       </div>

@@ -64,8 +64,6 @@ $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
   background-color: #333;
   overflow: hidden;
   border-radius: 10px;
-  // box-shadow: rgba(black, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px,
-  //   inset rgba(white, 0.5) 0 0 0 6px;
   transition: 1s $returnEasing;
 }
 
