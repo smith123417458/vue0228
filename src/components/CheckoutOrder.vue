@@ -2,11 +2,11 @@
   <div>
     <div v-if="!order.is_paid">
       <h2 class="text-center text-success">您的訂單已建立</h2>
-      <p class="text-center text-secondary">待付款成功後，將於 8 小時內出貨</p>
+      <p class="text-center text-secondary">待付款成功後，將於 8 小時內取車</p>
     </div>
     <dir v-else>
       <h2 class="text-center text-success">您已成功付款</h2>
-      <p class="text-center text-secondary">感謝您的購買，我們將會盡快出貨</p>
+      <p class="text-center text-secondary">感謝您的預訂，我們將會盡快準備車輛</p>
     </dir>
 
     <div class="card p-0 card-shadow mb-5 p-3">
@@ -54,14 +54,14 @@
             <tr>
               <th>
                 <i class="fal fa-home-lg mr-2"></i>
-                <span class="font-weight-bold">宅配地址</span>
+                <span class="font-weight-bold">配車地址</span>
               </th>
               <td>{{ order.user.address }}</td>
             </tr>
             <tr v-if="order.user.delivery">
               <th>
                 <i class="fal fa-igloo mr-2"></i>
-                <span class="font-weight-bold">收件地址</span>
+                <span class="font-weight-bold">分店地址</span>
               </th>
               <td>{{ order.user.delivery }}</td>
             </tr>
@@ -133,54 +133,6 @@
                         placeholder="卡號"
                       />
                     </div>
-                    <!-- // * 原本的卡號欄位 -->
-                    <!-- <div class="col-3 col-lg-2">
-                      <div class="input-group border-bottom">
-                        <input
-                          type="tel"
-                          class="form-control border-0"
-                          placeholder="xxxx"
-                          maxlength="4"
-                          required
-                        />
-                      </div>
-                    </div>
-                    <span style="line-height: 40px">-</span>
-                    <div class="col-3 col-lg-2">
-                      <div class="input-group border-bottom">
-                        <input
-                          type="tel"
-                          class="form-control border-0"
-                          placeholder="xxxx"
-                          maxlength="4"
-                          required
-                        />
-                      </div>
-                    </div>
-                    <span style="line-height: 40px">-</span>
-                    <div class="col-3 col-lg-2">
-                      <div class="input-group border-bottom">
-                        <input
-                          type="tel"
-                          class="form-control border-0"
-                          placeholder="xxxx"
-                          maxlength="4"
-                          required
-                        />
-                      </div>
-                    </div>
-                    <span style="line-height: 40px">-</span>
-                    <div class="col-3 col-lg-2">
-                      <div class="input-group border-bottom">
-                        <input
-                          type="tel"
-                          class="form-control border-0"
-                          placeholder="xxxx"
-                          maxlength="4"
-                          required
-                        />
-                      </div>
-                    </div> -->
                   </div>
                   <div class="row mb-5">
                     <div class="col-4 col-lg-2">

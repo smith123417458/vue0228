@@ -15,7 +15,7 @@
            <div class="h5 mt-4 mb-3"
             v-if="!product.price">NT{{ product.origin_price | currency }}</div>
             <div
-              class="h6 text-secondary mt-4"
+              class="h6 text-secondary mt-4 bar"
               v-if="product.price"
             >原價 NT{{ product.origin_price | currency }}/天</div>
       
@@ -31,7 +31,7 @@
         <div class="row justify-content-between">
 
            <select name class="form-control my-3" v-model="qty">
-              <option value="0" selected disabled>請選擇數量</option>
+              <option value="0" selected disabled>請選擇天數</option>
               <option :value="num" v-for="num in 10" :key="num">租 {{num}} {{product.unit}}</option>
             </select>
 
@@ -104,5 +104,8 @@ export default {
 <style lang="scss" scoped>
 .not-allowed {
   cursor: default;
+}
+.bar{
+  text-decoration:line-through;
 }
 </style>

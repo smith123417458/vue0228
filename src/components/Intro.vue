@@ -12,11 +12,12 @@
       <p class="h2 mb-4 typing">線上/手機即可預約,輕鬆成行</p>
       
       <router-link class="light" to="/product">
-      <i class="fas fa-car-side"></i>
+      
        <span></span>
       <span></span>
       <span></span>
        <span></span>
+       <i class="fas fa-car-side"></i>
       選擇車款
       
       

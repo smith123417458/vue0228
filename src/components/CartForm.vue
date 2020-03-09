@@ -19,7 +19,7 @@
     </div>
 
     <div v-else>
-      <h2 class="text-center mb-3">購物清單</h2>
+      <h2 class="text-center mb-3">租車明細</h2>
       <table class="table">
         <thead>
           <th width="20"></th>
@@ -32,7 +32,7 @@
           <th
             class="text-right"
             width="60"
-          >數量</th>
+          >天數</th>
           <th
             class="text-right"
             width="100"
@@ -141,7 +141,7 @@
           <router-link
             class="btn btn-outline-secondary rounded-0 px-4 my-5 mx-3"
             to="/product"
-          >繼續購物</router-link>
+          >繼續租車</router-link>
           <router-link
             class="btn btn-dark rounded-0 px-5 my-5"
             to="/cart/checkout"

@@ -21,7 +21,7 @@
               colspan="2"
               width="100"
             >品名</th>
-            <th class="text-right">數量</th>
+            <th class="text-right">天數</th>
             <th class="text-right">總計</th>
           </thead>
           <tbody>
@@ -160,7 +160,7 @@
           <label>
             <i class="fal fa-house-return"></i>
             <i class="fal fa-shipping-fast p-3"></i>
-            <span class="text-secondary">運送</span>
+            <span class="text-secondary">取車方式</span>
           </label>
           <div class="form-row justify-content-center">
             <div class="form-group col-md-5">
@@ -178,7 +178,7 @@
                 <label
                   class="custom-control-label"
                   for="convenience-store"
-                >超商取貨</label>
+                >到店取車</label>
               </div>
             </div>
             <div class="form-group col-md-5">
@@ -195,13 +195,13 @@
                 <label
                   class="custom-control-label"
                   for="home-delivery"
-                >宅配到府</label>
+                >配車到府</label>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- 如果選擇超商取貨，才會顯示超商地址 -->
+        <!-- 如果選擇到店取車，才會顯示分店地址 -->
         <div
           class="form-group delivery"
           v-if="convenience"
@@ -216,7 +216,7 @@
               type="text"
               name="convenience"
               class="form-control border-0"
-              placeholder="請填入超商名稱或地址"
+              placeholder="請填入分店名稱或地址"
               v-model="form.user.delivery"
               v-validate="'required'"
             />
