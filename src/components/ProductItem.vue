@@ -11,7 +11,16 @@
       </div>
       <div class="col-lg-6 d-flex flex-column">
         <h2>{{ product.title }}</h2>
-        <p class="h4 text-right" v-if="product.price">{{ product.price | currency }}</p>
+
+           <div class="h5 mt-4 mb-3"
+            v-if="!product.price">NT{{ product.origin_price | currency }}</div>
+            <div
+              class="h6 text-secondary mt-4"
+              v-if="product.price"
+            >原價 NT{{ product.origin_price | currency }}/天</div>
+      
+        <p class="h4 text-right text-danger" v-if="product.price">特價 NT {{ product.price | currency }}/天</p>
+
         <p class="border-bottom mb-5"></p>
         <p class="mb-5 font-weight-bold h4" style="line-height: 1.5">{{ product.description }}</p>
         <!-- <ul class="mb-5">
@@ -20,24 +29,14 @@
        <p class="mb-5  h6" style="line-height: 1.0">{{product.content}}</p>
 
         <div class="row justify-content-between">
-          <div
-            class="col-4 col-lg-3 btn-group d-flex align-items-center p-0"
-            style="border-bottom: 1px solid #343a40"
-            role="group"
-            aria-label="Basic example"
-          >
-            <button
-              type="button"
-              class="btn"
-              :class="{ 'not-allowed': qty === 1 }"
-              :disabled="qty === 1"
-              @click="decreaseQty"
-            >
-              -
-            </button>
-            <input class="form-control border-0 text-center" type="tel" v-model.number="qty" />
-            <button type="button" class="btn" @click="increaseQty">+</button>
-          </div>
+
+           <select name class="form-control my-3" v-model="qty">
+              <option value="0" selected disabled>請選擇數量</option>
+              <option :value="num" v-for="num in 10" :key="num">租 {{num}} {{product.unit}}</option>
+            </select>
+
+
+          
           <button type="button" class="btn btn-outline-dark" @click="addToCart(product.id)">
             加入購物車
           </button>
