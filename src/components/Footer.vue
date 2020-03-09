@@ -3,7 +3,7 @@
     <div class="container text-light">
       <div class="row mb-5">
         <div class="col-12 col-md-12 col-lg-3 d-flex flex-column justify-content-between">
-          <h2 class="mb-3">V-Headphone</h2>
+          <h2 class="mb-3">好運租車</h2>
           <div class="footer-btn text-right text-md-right text-lg-left mb-5 mb-lg-0">
             <a class="facebook h5 p-2" href="https://github.com/0445814/V-Headphone" title="Facebook">
               <i class="fab fa-facebook-f"></i>
@@ -24,16 +24,16 @@
         </div>
 
         <div class="col-2 d-none d-md-block">
-          <h4 class="h6 mb-4">代理品牌</h4>
+          <h4 class="h6 mb-4">車款選擇</h4>
           <ul class="navbar-nav">
-            <li class="nav-item py-1" v-for="brand in brands.Headphone" :key="brand">
+            <li class="nav-item py-1" v-for="brand in brands.car" :key="brand">
               <a
                 class="text-light hvr-underline-reveal"
                 href="#"
                 @click.prevent="goPage(brand)"
               >{{brand}}</a>
             </li>
-            <li class="nav-item py-1" v-for="brand in brands.DAC" :key="brand">
+            <li class="nav-item py-1" v-for="brand in brands.motorbike" :key="brand">
               <a
                 class="text-light hvr-underline-reveal"
                 href="#"
@@ -44,7 +44,7 @@
         </div>
 
         <div class="col-2 d-none d-md-block">
-          <h4 class="h6 mb-4">平輸代購</h4>
+          <h4 class="h6 mb-4">接送服務</h4>
           <ul class="navbar-nav">
             <li class="nav-item py-1">
               <router-link class="text-light hvr-underline-reveal" to="/parallel_import">訂單提交</router-link>
@@ -52,10 +52,10 @@
           </ul>
         </div>
         <div class="col-2 d-none d-md-block">
-          <h4 class="h6 mb-1 mb-lg-4">支援</h4>
+          <h4 class="h6 mb-1 mb-lg-4">租車優惠</h4>
           <ul class="navbar-nav">
             <li class="nav-item py-1">
-              <router-link class="text-light hvr-underline-reveal" to="/warranty">保固條款</router-link>
+              <router-link class="text-light hvr-underline-reveal" to="/warranty">注意事項</router-link>
             </li>
           </ul>
         </div>

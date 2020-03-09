@@ -48,14 +48,14 @@
             @mouseleave="brandMouseLeave"
             @click="changeCategory('car')"
           >
-            <span class="align-middle">代理品牌</span>
+            <span class="align-middle">車款選擇</span>
           </a>
         </li>
 
         <!-- 其他裝置下的代理品牌 -->
         <li class="nav-item d-xl-none">
           <a class="nav-link p-3 px-4" href="#" @click.prevent="brandTouch">
-            <span class="align-middle">代理品牌</span>
+            <span class="align-middle">車款選擇</span>
           </a>
 
           <ul id="brand-list-rwd" class="navbar-nav d-xl-none">
@@ -167,21 +167,17 @@
 
           <a
             class="col-5"
-            style="background: url(https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/79737755_2705488579507181_6351927863922393088_o.jpg?_nc_cat=106&_nc_ohc=wU6DPgeaOicAX9gEuPS&_nc_ht=scontent-tpe1-1.xx&oh=16639c1a54f5bc0b6ce30452c1630580&oe=5E92D139); background-size: cover; background-position: center center;"
+            style="background: url(https://i.imgur.com/52Uyvxs.jpg); background-size: cover; background-position: center center;"
             href="#"
-            @click.prevent="changeCategory('Headphone')"
+            @click.prevent="changeCategory('car')"
           >
             <p
-              class="h1 text-white mt-5"
+              class="h1 text-white mt-2"
               style=" text-shadow: 2px 2px 8px black"
             >
              好運租車
             </p>
-            <p
-              class="h5 text-black ml-8"
-            >
-              這是右邊那個圖片中的字
-            </p>
+           
           </a>
         </div>
         <div class="row w-100">
