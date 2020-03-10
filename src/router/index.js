@@ -24,6 +24,12 @@ const routes = [{
     component: () => import('@/components/ProductItem.vue'),
   },
   {
+    path: "signin",
+    component: () => import('@/components/Login.vue'),
+  }
+
+,
+  {
     path: 'cart',
     component: () => import('@/components/Cart.vue'),
     children: [
@@ -42,6 +48,30 @@ const routes = [{
       
     ],
   },
+
+  {
+    path: "/admin",
+    component: () => import('@/components/Dashboard.vue'),
+    children: [
+      {
+        path: "products",
+        component: () => import('@/components/DashProducts.vue'),
+        meta: { requiresAuth: true }
+      },
+      {
+        path: "coupons",
+        component: () => import('@/components/Coupon.vue'),
+        meta: { requiresAuth: true }
+      },
+      {
+        path: "orders",
+        component: () => import('@/components/DashOrders.vue'),
+        meta: { requiresAuth: true }
+      }
+    ]
+  }
+
+
   
   
   ],

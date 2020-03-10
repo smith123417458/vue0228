@@ -23,14 +23,14 @@
 
     <div class="collapse navbar-collapse ml-xl-6 order-2 order-xl-1" id="navbarNav">
       <ul class="navbar-nav">
-        <!-- 其他裝置下的會員登入與註冊 -->
+        <!-- 手機下登入與註冊 -->
         <li class="nav-item d-flex d-xl-none">
-          <router-link class="nav-link border w-50 text-center" to="/user/login"
+          <router-link class="nav-link border w-50 text-center" to="/signin"
             >會員登入</router-link
           >
-          <router-link class="nav-link border w-50 text-center" to="/user/register"
+           <router-link class="nav-link border w-50 text-center" to="/user/register"
             >註冊</router-link
-          >
+          > 
         </li>
 
         <li class="nav-item">
@@ -38,7 +38,7 @@
             <span class="hvr-underline-from-left">新品上市</span>
           </a>
         </li>
-        <!-- 瀏覽器下的代理品牌 -->
+        <!-- 瀏覽器下車款選擇 -->
         <li class="nav-item d-none d-xl-block">
           <a
             id="brand"
@@ -52,7 +52,7 @@
           </a>
         </li>
 
-        <!-- 其他裝置下的代理品牌 -->
+        <!-- 手機下的車款選擇 -->
         <li class="nav-item d-xl-none">
           <a class="nav-link p-3 px-4" href="#" @click.prevent="brandTouch">
             <span class="align-middle">車款選擇</span>
@@ -82,10 +82,10 @@
       </ul>
     </div>
 
-    <!-- 右方功能列 -->
+    <!-- 會員登入 -->
     <ul class="navbar-nav mr-xl-6 order-1 order-xl-2">
       <li class="nav-item">
-        <router-link class="d-none d-xl-block py-3 px-4" to="/user/login">
+        <router-link class="d-none d-xl-block py-3 px-4" to="/signin">
           <i class="fal fa-user-circle"></i>
         </router-link>
       </li>
